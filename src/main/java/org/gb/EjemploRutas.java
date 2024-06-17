@@ -14,16 +14,17 @@ public class EjemploRutas {
 
     @jakarta.ws.rs.GET
     @jakarta.ws.rs.Produces(MediaType.TEXT_PLAIN)
-    //Esto es en el path helloy devuelve un hello restEasy
-    public String hello () {return "Hello RestEasy";}
+    //Esto es en el path hello y devuelve un hello restEasy
+    public String hello () {return "hola Joel";}
 
     @jakarta.ws.rs.GET
     @jakarta.ws.rs.Produces(MediaType.TEXT_PLAIN)
-    //En esta parte agregamos un path diferente haciendo referencia a un metodo llamado main
-    @jakarta.ws.rs.Path("custom/{name}")
-    //Generemaos un metodo customhello en el cual agregamos la variable
+    /*En esta parte agregamos un path diferente 
+    haciendo referencia a un metodo llamado main*/
+    @jakarta.ws.rs.Path("custom/{name}")    
+    //Generemaos un metodo custom hello en el cual agregamos la variable
     public String customhello(@PathParam("name") String name ){
-        return  greeting+" "+ name +" how are you doing?";
+        return  greeting+" "+ name +" ¿como te olllll?";
     }
     
 }
